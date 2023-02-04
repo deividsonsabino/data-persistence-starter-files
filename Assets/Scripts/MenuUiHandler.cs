@@ -9,7 +9,7 @@ public class MenuUiHandler : MonoBehaviour
 {
     [SerializeField] Text playerNameInpu;
     // Start is called before the first frame update
-    public void Start()
+    public void StartGame()
     {
         SceneManager.LoadScene(1);
     }

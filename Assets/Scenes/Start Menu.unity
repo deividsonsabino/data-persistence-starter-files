@@ -774,7 +774,7 @@ GameObject:
   - component: {fileID: 1123666153}
   - component: {fileID: 1123666152}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: Player Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -861,7 +861,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1969676449}
+        m_TargetAssemblyTypeName: MenuUiHandler, Assembly-CSharp
+        m_MethodName: SetPlayerName
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -1018,7 +1030,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1221957817}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1969676449}
+        m_TargetAssemblyTypeName: MenuUiHandler, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1221957817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1294,7 +1318,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1656810752}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1969676449}
+        m_TargetAssemblyTypeName: MenuUiHandler, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1656810752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1479,6 +1515,7 @@ GameObject:
   - component: {fileID: 1969676447}
   - component: {fileID: 1969676446}
   - component: {fileID: 1969676445}
+  - component: {fileID: 1969676449}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1570,6 +1607,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1969676449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969676444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc2726703a75c584a9fd4760daf92cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNameInpu: {fileID: 0}
 --- !u!1 &2018716915
 GameObject:
   m_ObjectHideFlags: 0
