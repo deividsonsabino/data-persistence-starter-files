@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class MenuUiHandler : MonoBehaviour
 {
-    [SerializeField] Text playerNameInpu;
+    [SerializeField] Text playerNameInput;
     // Start is called before the first frame update
     public void StartGame()
     {
@@ -16,7 +16,7 @@ public class MenuUiHandler : MonoBehaviour
 
     public void SetPlayerName()
     {
-        PlayerDataHandle.Instance.playerName = playerNameInpu.text;
+        PlayerDataHandle.Instance.playerName = playerNameInput.text;
     }
 
     public void ExitGame()
